@@ -90,3 +90,10 @@ body {
     align-items: center;
     margin-left: 90px;
 }
+.music-controls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 1100px;
+    margin-top: 0px;
+}
