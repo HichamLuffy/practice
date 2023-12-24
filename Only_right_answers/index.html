@@ -6,12 +6,6 @@
     </head> 
     <body>
         <div class="container">
-            <div class="music-controls">
-                <div class="volume-control">
-                    <button onclick="toggleMute()">🔊</button>
-                    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" oninput="changeVolume()">
-                </div>
-            </div>
             <div >
                 <h1 class = "header_text">What keyword is used to define a function in Python?</h1>
             </div>
@@ -26,9 +20,6 @@
                 <button class="btn1" id="noButton1" onmouseover="moveButton('noButton1')" onclick="moveButton('noButton1')">case</button>
                 <button class="btn1" id="yesButton1" onclick="document.getElementById('yesButton1').style.backgroundColor = '#00FF00'">if</button>
             </div>
-            <audio id="backgroundMusic" loop>
-                <source src="Youhavenoenemie.mp3" type="audio/mp3">
-            </audio>
                 <script>
                     function rightanswer() {
                         button.style.backgroundColor = "#00FF00";
@@ -39,18 +30,6 @@
                         var y = Math.random() * (window.innerHeight - document.getElementById(id).offsetHeight);
                         document.getElementById(id).style.left = `${x}px`;
                         document.getElementById(id).style.top = `${y}px`;
-                    }
-                    function toggleMute() {
-                        var audio = document.getElementById('backgroundMusic');
-                        audio.muted = !audio.muted;
-                        var button = document.querySelector('.volume-control button');
-                        button.textContent = audio.muted ? '🔇' : '🔊';
-                    }
-
-                    function changeVolume() {
-                        var audio = document.getElementById('backgroundMusic');
-                        var volumeControl = document.getElementById('volumeControl');
-                        audio.volume = volumeControl.value;
                     }
                 </script> 
             </div>
