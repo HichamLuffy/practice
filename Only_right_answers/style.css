@@ -15,13 +15,18 @@ body {
     padding: 20px;
 }
 
-#noButton, #noButton1 {
+#noButton, #yesButton1 {
     position: absolute;
     margin-left: 70px;
     transition: 0.5s;
 }
 
-#yesButton, #yesButton1 {
+#noButton1 {
+    position: absolute;
+    margin-right: 150px;
+}
+
+#yesButton {
     position: absolute;
     margin-right: 150px;
 }
@@ -33,7 +38,8 @@ body {
     font-family: 'Nunito';
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: left;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -46,6 +52,7 @@ body {
     font-family: 'Nunito';
     font-size: 20px;
     font-weight: bold;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
     border-radius: 3px;
     color: white;
     text-align: left;
@@ -63,8 +70,8 @@ body {
 }
 
 .btn, .btn1 {
-    background-color: #f30a44;
-    color: white;
+    background-color: #0a21f36c;
+    color: rgb(255, 255, 255);
     padding: 5px 10px;
     text-align: center;
     display: inline-block;
