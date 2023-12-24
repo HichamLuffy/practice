@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">What keyword is used to define a function in Python?</h1>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="document.getElementById('yesButton').style.backgroundColor = '#00FF00'">def</button>
+                <button class="btn" id="noButton" onmouseover="moveButton(id)" onclick="moveButton(id)">function</button>
+            </div>
+            <div>
+                <h1 class="header_text1">In Python, what is the keyword for creating a conditional statement?</h1>
+            </div>
+            <div class="buttons1">
+                <button class="btn1" id="yesButton1" onclick="document.getElementById('yesButton1').style.backgroundColor = '#00FF00'">if</button>
+                <button class="btn1" id="noButton1" onmouseover="moveButton('noButton1')" onclick="moveButton('noButton1')">case</button>
+            </div>
+                <script>
+                    function rightanswer() {
+                        button.style.backgroundColor = "#00FF00";
+                    }
+                    
+                    function moveButton(id) {
+                        var x = Math.random() * (window.innerWidth - document.getElementById(id).offsetWidth);
+                        var y = Math.random() * (window.innerHeight - document.getElementById(id).offsetHeight);
+                        document.getElementById(id).style.left = `${x}px`;
+                        document.getElementById(id).style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+            
+        </div>
+       
+    </body> 
+</html>
