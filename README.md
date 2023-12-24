@@ -9,7 +9,6 @@ This is a simple web-based quiz application where users can answer questions and
 - [How to Use](#how-to-use)
 - [Demo](#demo)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
